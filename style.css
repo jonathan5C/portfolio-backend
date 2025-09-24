@@ -52,17 +52,41 @@ main aside {
   /* background: #f0f8ff; */
 }
 
+main aside img {
+  width: 100px;
+  height: 100px;
+}
+
 main aside#capa {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
+}
+
+main aside#sobre h2 {
+  margin-bottom: 1rem;
 }
 
 main aside#sobre #conteudo {
   display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+main aside#sobre #conteudo article#resumo-profissional {
+  margin-right: 10%;
+}
+
+main aside#sobre #conteudo article#resumo-profissional div {
+  margin-top: 3rem;
 }
 
 main aside#sobre #conteudo article img {
-  width: 100px;
-  height: 100px;
+  width: 310px;
+  height: 310px;
+  border-radius: 25px;
 }
 
 footer {

@@ -27,7 +27,7 @@
       <aside id="sobre">
         <h2>Sobre mim</h2>
         <div id="conteudo">
-          <article>
+          <article id="resumo-profissional">
             <p>
               Sou o Jonathan Macedo Castro, apaixonado por tecnologia e um cara
               que adoro um desafio para solucionar de forma inovadora. Sou um
@@ -35,8 +35,15 @@
               estude para conquista o meu objetivo profissional, que é chegar em
               uma posição de C level, como CTO! Estou estudando para melhorar
               minhas soft skills de forma constante, fazendo mentorias ou lendo
-              livros de qualidade.
+              livros de qualidade. As tecnologias dos meus projetos são:
             </p>
+            <div>
+              <i class="fa-brands fa-java fa-2xl"></i>
+              <i class="fa-brands fa-python fa-2xl"></i>
+              <i class="fa-brands fa-js fa-2xl"></i>
+              <i class="fa-brands fa-html5 fa-2xl"></i
+              ><i class="fa-brands fa-css3-alt fa-2xl"></i>
+            </div>
           </article>
           <article>
             <img
@@ -65,16 +72,46 @@
               href="https://github.com/jonathan5C/cadastro-clientes"
               target="_blank"
               rel="noopener noreferrer"
-              >Ir para o repositório</a
+              ><i class="fa-brands fa-github"></i>Ir para o repositório</a
             >
           </div>
         </article>
       </aside>
     </main>
     <footer>
-      <div class="informacoes_adicionais"></div>
-      <div class="informacoes_adicionais"></div>
+      <div class="informacoes_adicionais">
+        <p>
+          Desenvolvimento em 2025 <i class="fa-thin fa-copyright"></i> por
+          Jonathan Macedo Castro. Para conhecer mais sobre o desenvolvedor,
+          entrar nos links profissionais abaixo dele:
+        </p>
+        <i class="fa-brands fa-square-linkedin fa-lg"></i>
+        <i class="fa-brands fa-github fa-lg"></i>
+        <i class="fa-brands fa-dev fa-lg"></i>
+      </div>
+      <div class="informacoes_adicionais">
+        <form
+          action="malito:jonathan.maccas@gmail.com"
+          method="POST"
+          enctype="text/plain"
+        >
+          <label for="email-enviado">
+            <input type="email" name="email" id="email-remetente" />
+          </label>
+          <label for="assunto">
+            <input type="text" name="assunto" id="assunto-remetente" />
+          </label>
+          <label for="descricao">
+            <input type="text" name="descricao" id="descricao-remetente" />
+          </label>
+          <input type="submit" value="enviar" />
+        </form>
+      </div>
     </footer>
     <script src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4502f6e6de.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
