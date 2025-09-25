@@ -4,109 +4,83 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfólio</title>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#capa">Início</a></li>
+          <li><a href="#sobre-mim">Sobre</a></li>
           <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <aside id="capa">
-        <h2>Jonathan Macedo Castro</h2>
-        <h4>Desevolvedor Back end</h4>
+      <section id="capa">
+        <img src="image/foto.jpg" alt="Foto de perfil pessoal" />
+        <h1>Jonathan Macedo Castro</h1>
         <p>
-          Aberto para conversas sobre algum projeto desenvolvido ou fazer
-          colaboração para a construção de um projeto.
+          Desenvolvedor Back end e aberto para conversas sobre construir
+          soluções inovadoras.
         </p>
-      </aside>
-      <aside id="sobre">
+      </section>
+      <section id="sobre-mim">
         <h2>Sobre mim</h2>
-        <div id="conteudo">
-          <article id="resumo-profissional">
-            <p>
-              Sou o Jonathan Macedo Castro, apaixonado por tecnologia e um cara
-              que adoro um desafio para solucionar de forma inovadora. Sou um
-              desenvolvedor JR, mas pode ter certeza que isso não impede que eu
-              estude para conquista o meu objetivo profissional, que é chegar em
-              uma posição de C level, como CTO! Estou estudando para melhorar
-              minhas soft skills de forma constante, fazendo mentorias ou lendo
-              livros de qualidade. As tecnologias dos meus projetos são:
-            </p>
-            <div>
-              <i class="fa-brands fa-java fa-2xl"></i>
-              <i class="fa-brands fa-python fa-2xl"></i>
-              <i class="fa-brands fa-js fa-2xl"></i>
-              <i class="fa-brands fa-html5 fa-2xl"></i
-              ><i class="fa-brands fa-css3-alt fa-2xl"></i>
-            </div>
-          </article>
-          <article>
-            <img
-              src="image/foto.jpg"
-              alt="Minha foto pessoal, estou usando uma camisa social azul escura, sou uma pessoa preta e estou usando óculos de grau."
-            />
-          </article>
-        </div>
-      </aside>
+        <p>
+          Sou uma pessoa apaixonada por tecnologia e um cara que adoro um
+          desafio para solucionar de forma inovadora. Sou um desenvolvedor JR,
+          mas pode ter certeza que isso não impede que eu estude para conquista
+          o meu objetivo profissional, que é chegar em uma posição de C level,
+          como CTO! Estou estudando para melhorar minhas soft skills de forma
+          constante, fazendo mentorias ou lendo livros de qualidade.
+        </p>
+      </section>
       <section id="projetos">
         <h2>Projetos</h2>
         <aside>
-          <article class="projeto">
-            <img
-              src="image/foto_java.png"
-              alt="Foto escrita Java tendo o mascote da linguagem de programação interagindo com uma xícara de café engraçada."
-            />
-            <h4>Cadastro de Clientes</h4>
-            <p>
-              Projeto desenvolvido em Java puro, sem nenhum framework e foi
-              usado o JDBC para conexão com o Banco de Dados, que é o
-              PostgreSQL. Também foi construído uma janela interativa para
-              cadastro do usuário.
-            </p>
-            <a
-              href="https://github.com/jonathan5C/cadastro-clientes"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fa-brands fa-github"></i>Ir para o repositório</a
-            >
-          </article>
+          <div class="projetos-cards">
+            <img src="image/foto_java.png" alt="" />
+            <article>
+              <h3>Cadastro de Clientes</h3>
+              <p>
+                Projeto desenvolvido em Java puro, sem nenhum framework e foi
+                usado o JDBC para conexão com o Banco de Dados, que é o
+                PostgreSQL. Também foi construído uma janela interativa para
+                cadastro do usuário.
+              </p>
+            </article>
+          </div>
         </aside>
+      </section>
+      <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form onsubmit="enviarWhats(event)">
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Nome"
+            class="formulario-campo"
+          />
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            placeholder="Digite sua mensagem"
+            class="formulario-campo"
+          ></textarea>
+          <button type="submit">
+            <i class="fa-brands fa-whatsapp"></i>Enviar WhatsApp
+          </button>
+        </form>
       </section>
     </main>
     <footer>
-      <div class="informacoes_adicionais">
-        <p>
-          Desenvolvimento em 2025 <i class="fa-thin fa-copyright"></i> por
-          Jonathan Macedo Castro. Para conhecer mais sobre o desenvolvedor,
-          entrar nos links profissionais abaixo dele:
-        </p>
-        <i class="fa-brands fa-square-linkedin fa-lg"></i>
-        <i class="fa-brands fa-github fa-lg"></i>
-        <i class="fa-brands fa-dev fa-lg"></i>
-      </div>
-      <div class="informacoes_adicionais">
-        <form
-          action="malito:jonathan.maccas@gmail.com"
-          method="POST"
-          enctype="text/plain"
-        >
-          <label for="email-enviado">
-            <input type="email" name="email" id="email-remetente" />
-          </label>
-          <label for="assunto">
-            <input type="text" name="assunto" id="assunto-remetente" />
-          </label>
-          <label for="descricao">
-            <input type="text" name="descricao" id="descricao-remetente" />
-          </label>
-          <input type="submit" value="enviar" />
-        </form>
-      </div>
+      <p>
+        Site desenvolvido por Jonathan Macedo Castro
+        <i class="fa-thin fa-copyright"></i> 2025
+      </p>
     </footer>
     <script src="main.js"></script>
     <script
